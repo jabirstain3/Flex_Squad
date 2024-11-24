@@ -3,12 +3,18 @@
     text-decoration: none;
     --actoncolor: #E6533C;
     --seconderycolor: #ffffff3d;
+    /* border: 1px solid white; */
 }
 
+
 #logo {
+    /* border: 1px solid white; */
+    margin: 0;
     font-size: 36px;
     font-weight: 800;
+    color: var(--actoncolor);
 }
+
 
 body {
     /* border: 1px solid white; */
@@ -17,17 +23,18 @@ body {
     background-color: black;
 }
 
+
 nav{
     /* border: 1px solid white; */
-    max-width: 1440px;
-    padding: 20px ;
+    max-width: 1100px;
+    padding: 40px 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-links{
+    /* border: 1px solid white; */
     border-radius: 20px;
     border: 1px solid var(--seconderycolor);
     padding: 0;
@@ -35,7 +42,6 @@ nav{
     justify-content: space-between;
     gap: 20px;
 }
-
 .nav-links > li {
     /* border: 1px solid white; */
     list-style: none;
@@ -46,13 +52,42 @@ nav{
     border-radius: 20px;
     background: var(--actoncolor);
 }
+.togolnav {
+    display: none;
+}
+
+
 main{
     width: 100%;
     max-width: 1440px;
 }
+
 
 section {
     width: 100%;
     max-width: 1440px;
 }
 
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        /* border: 1px solid white; */
+        padding: 20px 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        display: none;
+    }
+    .togolnav {
+        /* border: 1px solid white; */
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
