@@ -27,12 +27,14 @@ body {
 } 
 
 .heading {
+    margin: 20px 0;
     font-family: "Inter", sans-serif;
     font-size: 48px ;
     font-weight: 900;
 }
 
 .content {
+    margin: 10px 0;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -106,7 +108,7 @@ section {
 
 #banner {
     /* border: 1px solid white; */
-    background-image: linear-gradient(rgba(119, 119, 119, 0), rgba(17, 17, 17, 1));
+    /* background-image: linear-gradient(rgba(119, 119, 119, 0), rgba(17, 17, 17, 1)); */
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -165,6 +167,7 @@ section {
     background: rgba(119, 119, 119, 0.358);
     border-radius: 6px;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -172,6 +175,13 @@ section {
 .stats1 {
     top: 70%; 
     right:74%;
+}
+
+.statu-sign{
+    width: 36px;
+    height:36px;
+    border-radius: 50%;
+    background: var(--actoncolor);
 }
 
 .stats2 {
@@ -197,6 +207,43 @@ section {
     color: var(--basetext)
 }
 
+
+#agenda {
+    text-align: center;
+    padding: 52px 0;
+}
+
+.habits {
+    margin: 48px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.habit {
+    width: 220px;
+
+}
+
+.habit-image {
+    width:auto;
+    border-radius: 50%;
+}
+
+.habit-heading {
+    margin: 30px 0 0;
+    font-family: "Inter", sans-serif;
+    font-size: 20px ;
+    font-weight: 900;
+    
+}
+
+.habit-paragraph {
+    margin: 10px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--basetext);
+}
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     nav{
@@ -260,7 +307,21 @@ section {
     .stats2 {
         top: 30%; 
         left: 70%; 
-    }    
+    }   
+    
+    #agenda {
+        width: 90%;
+        max-width: 560px;
+        padding: 36px 0px;
+    }
+    
+    .habits {
+        margin: 40px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
 }
 
 
@@ -273,13 +334,16 @@ section {
         width: 170px;
         padding: 16px 10px;
     }
+
     nav{
         /* border: 1px solid white; */
         padding: 20px 10px;
     }
+
     .nav-links{
         display: none;
     }
+
     .togolnav {
         /* border: 1px solid white; */
         display: block;
@@ -287,8 +351,9 @@ section {
         height: 24px;
     }
 
+
     #banner {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         padding: 48px 20px 0;
         flex-direction: column;
         justify-content: center;
@@ -325,9 +390,8 @@ section {
     }
     
     .hero-image {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         padding: 40px 24px;
-        /* position: relative; */
     }
 
     .stats {
@@ -344,4 +408,16 @@ section {
         right: 0px;
     }  
     
+    #agenda {
+        width: 90%;
+        padding: 36px 0px;
+    }
+    
+    .habits {
+        margin: 48px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        justify-content: center;
+    }
 }
