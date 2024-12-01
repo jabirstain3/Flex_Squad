@@ -3,7 +3,7 @@
     text-decoration: none;
     --actoncolor: #E6533C;
     --seconderycolor: #ffffff3d;
-    --basetext:rgb(255, 255, 255, 50%)
+    --basetext:rgb(255, 255, 255, 50%);
     /* border: 1px solid white; */
 }
 
@@ -43,6 +43,7 @@ body {
 
 .btn {
 width: 200px;
+margin: 10px 0;
 border: 1px solid white;
 border-radius: 40px;
 color:white;
@@ -55,8 +56,10 @@ font-weight: 600;
 
 .btn:hover {
 border: hidden;
+border: 1px solid var(--actoncolor);
 background-color: var(--actoncolor);
 }
+
 
 nav{
     /* border: 1px solid white; */
@@ -109,7 +112,7 @@ section {
 #banner {
     /* border: 1px solid white; */
     /* background-image: linear-gradient(rgba(119, 119, 119, 0), rgba(17, 17, 17, 1)); */
-    padding: 10px;
+    padding: 10px 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,10 +159,17 @@ section {
 }
 
 .hero-image {
-        /* border: 1px solid white; */
+    width: auto;
+    /* border: 1px solid white; */
     padding: 0 24px;
     position: relative;
 }
+
+.hero-image > img {
+    /* border: 1px solid white; */
+    margin: 0 auto;
+}
+
 .stats {
     position: absolute;
     width: 180px;
@@ -174,7 +184,7 @@ section {
 
 .stats1 {
     top: 70%; 
-    right:74%;
+    right: 74%;
 }
 
 .statu-sign{
@@ -189,16 +199,13 @@ section {
     right: -10px; 
 }
 
-/* .state-content{
-
-} */
-
 .state-heading {
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     margin: 0;
 }
+
 .state-paragraph{
     font-size: 16px; 
     font-family: 'Inter', sans-serif; 
@@ -209,6 +216,8 @@ section {
 
 
 #agenda {
+    width: 92%;
+    max-width: 1100px;
     text-align: center;
     padding: 52px 0;
 }
@@ -227,6 +236,7 @@ section {
 .habit-image {
     width:auto;
     border-radius: 50%;
+    border: 5px solid rgba(210, 210, 210, 0.069)
 }
 
 .habit-heading {
@@ -245,23 +255,70 @@ section {
     color: var(--basetext);
 }
 
+
+#runningClub {
+    /* border: 1px solid white; */
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    background: rgba(119, 119, 119, 0.358);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.runningClub-container {
+    width: 40%;
+    padding: 0px 20px;
+
+}
+
+.runningClub-image {
+    border-radius: 16px;
+    width: 360px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.runningClub-image > img {
+    width: 760px;
+    /* aspect-ratio: inherit ; */
+    /* object-fit: cover; */
+    /* object-position:center; */
+}
+
+
+
+
+/* ------------- Tablet Screen ------------ */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    /* * {
+        border: 1px solid white;
+    } */
+    
     nav{
         /* border: 1px solid white; */
         padding: 20px;
     }
+
+
     #banner {
         /* border: 1px solid white; */
         padding: 20px 0 0;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .hero-content-container {
         /* border: 1px solid white; */
         width: 100%;
     }
-    
+
     .hero-content-container > h1 {
         /* border: 1px solid white; */
         font-family: "Inter", sans-serif;
@@ -271,7 +328,7 @@ section {
         /* margin-bottom: 100px; */
         margin: 0;
     }
-    
+
     .hero-content-container > p {
         /* border: 1px solid white; */
         margin: 20px 0;
@@ -280,24 +337,25 @@ section {
         /* font-weight: 400; */
         /* color: var(--basetext); */
     }
-    
+
     .extrafont {
         /* border: 1px solid white; */
         font-family: 'Miama', sans-serif;
         font-size: 80px;
         font-weight: 500;
     }
-    
-    /* .btn-group { */
-        /* border: 1px solid white; */
-        /* } */
-        
+
     .hero-image {
         /* border: 1px solid white; */
-        padding: 40px 0 0;
+        padding: 40px 0px 0px;
         position: relative;
     }
 
+    .hero-image  img {
+        /* border: 1px solid white; */
+        width: 100%; 
+        margin: 0 auto;
+    }
 
     .stats1 {
         top: 74%; 
@@ -308,7 +366,8 @@ section {
         top: 30%; 
         left: 70%; 
     }   
-    
+
+
     #agenda {
         width: 90%;
         max-width: 560px;
@@ -322,18 +381,48 @@ section {
         gap: 20px;
         justify-content: space-around;
     }
+
+
+    #runningClub {
+        /* border: 1px solid white; */
+        width: 88%;
+        padding: 28px;
+        border-radius: 10px;
+    }
+
+    .runningClub-container {
+        /* border: 1px solid white; */
+        width: 48%;
+        min-width: 300px;
+        padding: 0 10px;
+    }
+    
+    .runningClub-image {
+        /* border-radius: 16px; */
+        width: 280px;
+        height: 340px;
+    }
+    
+    .runningClub-image > img {
+        width: 700px;
+    }
 }
 
 
 
 
-
+/* ------------- Mobile Screen ------------ */
 @media screen and (max-width: 576px) {
+    /* * {
+        border: 1px solid white;
+    } */
+
     .btn {
         border: 1px solid white;
         width: 170px;
         padding: 16px 10px;
     }
+
 
     nav{
         /* border: 1px solid white; */
@@ -358,31 +447,31 @@ section {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .hero-content-container {
         /* border: 1px solid white; */
         width: 100%;
     }
-    
+
     .hero-content-container > h1 {
         /* border: 1px solid white; */
         width: 280px;
         font-size: 48px;
     }
-    
+
     .hero-content-container > p {
         /* border: 1px solid white; */
         width: 280px;
         margin: 28px 0;
     }
-    
+
     .extrafont {
         /* border: 1px solid white; */
         font-size: 52px;
     }
 
     .btn-group {
-        /* border: 1px solid white; */
+        border: 1px solid white;
         display: flex;
         gap: 10px;
         /* justify-content: space-between; */
@@ -391,7 +480,14 @@ section {
     
     .hero-image {
         /* border: 1px solid white; */
-        padding: 40px 24px;
+        width: 100%;
+        padding: 40px 0px 0px;
+    }
+
+    .hero-image > img {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: 0 auto;
     }
 
     .stats {
@@ -403,21 +499,55 @@ section {
         top: 70%; 
         left: 0px;
     }
+
     .stats2 {
         top: 30%;
         right: 0px;
     }  
-    
+
+
     #agenda {
+        /* border: 1px solid white; */
         width: 90%;
         padding: 36px 0px;
     }
-    
+
     .habits {
+        /* border: 1px solid white; */
         margin: 48px 10px;
         display: flex;
         flex-wrap: wrap;
         gap: 28px;
         justify-content: center;
+    }
+
+
+    #runningClub {
+        /* border: 1px solid white; */
+        width: 80%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .runningClub-container {
+        /* border: 1px solid white; */
+        width: 100%;
+        padding: 0px;
+    
+    }
+
+    .runningClub-image { 
+        /* border: 1px solid white; */
+        border-radius: 16px;
+        width: 100%;
+        height: auto;
+    }
+
+    .runningClub-image > img {
+        width: 100%;
     }
 }
