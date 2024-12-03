@@ -571,7 +571,19 @@ footer {
     }
     
     
-
+    .team-gallery {
+        /* border: 1px solid white; */
+        padding: 16px;
+        grid-template-columns: auto auto auto ;
+        gap: 16px
+    
+    }
+    
+    .member > img  {
+        /* border: 1px solid white; */
+        border-radius: 16px;
+        aspect-ratio: 4/5;
+    }
     
 
 
@@ -754,6 +766,24 @@ footer {
         width: 100%;
     }
 
+
+    #team {
+        /* border: 1px solid white; */
+        width: 88%;
+        padding: 56px 0;
+    }
+    
+    .team-gallery {
+        /* border: 1px solid white; */
+        border-radius: 16px;
+        grid-template-columns: auto;
+    }
+    
+    .member-info {
+        bottom: 20px;
+        left: 20px;
+    }
+    
 
 
     .footer-container {
