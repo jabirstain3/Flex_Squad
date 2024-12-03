@@ -3,6 +3,7 @@
     text-decoration: none;
     --actoncolor: #E6533C;
     --seconderycolor: #ffffff3d;
+    --seconderybase:rgba(255, 255, 255, 0.1);
     --basetext:rgb(255, 255, 255, 50%);
     --font: "Inter", sans-serif;
     /* border: 1px solid white; */
@@ -28,14 +29,16 @@ body {
 } 
 
 .heading {
-    margin: 20px 0;
+    max-width: 600px;
+    margin: 20px auto;
     font-family: var(--font);
     font-size: 48px ;
     font-weight: 900;
 }
 
 .content {
-    margin: 10px 0;
+    max-width: 600px;
+    margin: 10px auto;
     font-family: var(--font);
     font-size: 16px;
     font-weight: 400;
@@ -297,11 +300,72 @@ section {
     /* object-position:center; */
 }
 
+
+
+
+#team {
+    /* border: 1px solid white; */
+    width: 92%;
+    text-align: center;
+    padding: 56px 0;
+}
+
+.team-gallery {
+    /* border: 1px solid white; */
+    margin: 40px 0 0;
+    padding: 20px;
+    border-radius: 16px;
+    display: grid;
+    background:var(--seconderybase);
+    grid-template-columns: auto auto auto ;
+    gap: 20px
+
+}
+
+.member {
+    /* border: 1px solid white; */
+    width: 100%;
+    position: relative;
+}
+
+.member > img  {
+    /* border: 1px solid white; */
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 5/4;
+    margin: auto;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.member-info {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    text-align: left;
+}
+
+.member-info > h2 {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 20px ;
+    font-weight: 900;
+}
+
+.member-info > p {
+    margin: 6px 0;
+    font-family: var(--font);
+    font-size: 14px ;
+    font-weight: 400;
+    color: var(--basetext);
+}
+
+
 footer {
     /* border: 1px solid white; */
     max-width: 1440px;
     height: fit-content;
-    background:rgba(255, 255, 255, 0.1);
+    background:var(--seconderybase);
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -391,6 +455,9 @@ footer {
     font-weight: 400;
     color: var(--basetext);
 } 
+
+
+
 
 /* ------------- Tablet Screen ------------ */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -502,6 +569,10 @@ footer {
     .runningClub-image > img {
         width: 700px;
     }
+    
+    
+
+    
 
 
     footer {
@@ -639,9 +710,9 @@ footer {
 
 
     #agenda {
-        /* border: 1px solid white; */
+        border: 1px solid white;
         width: 90%;
-        padding: 36px 0px;
+        padding: 40px 0px;
     }
 
     .habits {
@@ -685,7 +756,6 @@ footer {
 
 
 
-    
     .footer-container {
         /* border: 1px solid white; */
         max-width: 94%;
