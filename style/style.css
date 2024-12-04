@@ -300,8 +300,99 @@ section {
     /* object-position:center; */
 }
 
+#bmi {
+    /* border: 1px solid white; */
+    max-width: 1440px;
+    height: fit-content;
+    background:var(--seconderybase);
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
 
+.bmi-container {
+    /* border: 1px solid white; */
+    max-width: 1100px;
+    margin: 0 auto 10px;
+    padding: 0 20px;
+}
 
+.bmi-calculation {
+    /* border: 1px solid white; */
+    margin: 20px 10px ;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.bmiChart {
+    /* border: 1px solid white; */
+    width: 36%;
+    max-width: 320px;
+}
+.bmiChart> h3 {
+    margin: 16px 0;
+    font-family: var(--font);
+    font-size: 28px ;
+    font-weight: 900;
+}
+
+table, th, td {
+    border: 1px solid var(--seconderybase);
+    padding: 10px;
+    color: var(--basetext);
+    font-family: var(--font);
+    font-size: 14px ;
+    font-weight: 500;
+}
+
+table {
+    width: 92%;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    font-family: var(--font);
+    font-size: 16px ;
+    font-weight: 500;
+}
+
+.bmi-cal {
+    /* border: 1px solid white; */
+    width: 64%;
+    max-width: 620px;
+}
+
+.bmi-cal > h3 {
+    margin: 16px 0;
+    font-family: var(--font);
+    font-size: 28px ;
+    font-weight: 900;
+}
+
+.cal {
+    /* border: 1px solid white; */
+    margin: 36px 0 0;
+    display: grid;
+    gap: 16px;
+}
+.cal > div {
+    /* border: 1px solid white; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background:var(--seconderybase);
+}
 
 #team {
     /* border: 1px solid white; */
@@ -437,7 +528,7 @@ footer {
 }
 
 .devider {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--seconderybase);
     margin: 20px auto;
 }
 
@@ -569,6 +660,36 @@ footer {
     .runningClub-image > img {
         width: 700px;
     }
+
+
+    .bmi-calculation {
+        border: 1px solid white;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .bmiChart {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bmiChart> h3 {
+        /* border: 1px solid white; */
+        margin: 16px  auto;
+        text-align: center;
+    }
+    
+    table {
+        /* border: 1px solid white; */
+        margin: 0 auto;
+    }
+    
+    .bmi-cal {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: 0 auto;
+    }
     
     
     .team-gallery {
@@ -584,7 +705,6 @@ footer {
         border-radius: 16px;
         aspect-ratio: 4/5;
     }
-    
 
 
     footer {
@@ -767,6 +887,38 @@ footer {
     }
 
 
+
+    .bmi-calculation {
+        /* border: 1px solid white; */
+        padding: 0 ;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .bmiChart {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bmiChart> h3 {
+        /* border: 1px solid white; */
+        margin: 16px  auto;
+        text-align: center;
+    }
+    
+    table {
+        /* border: 1px solid white; */
+        margin: 0 auto;
+    }
+    
+    .bmi-cal {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
     #team {
         /* border: 1px solid white; */
         width: 88%;
@@ -783,7 +935,6 @@ footer {
         bottom: 20px;
         left: 20px;
     }
-    
 
 
     .footer-container {
