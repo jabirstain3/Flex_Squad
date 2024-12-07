@@ -375,6 +375,7 @@ section {
     width: 36%;
     max-width: 320px;
 }
+
 .bmiChart> h3 {
     margin: 16px 0;
     font-family: var(--font);
@@ -427,7 +428,7 @@ th {
     /* border: 1px solid white; */
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
 
@@ -733,7 +734,7 @@ footer {
 
 
     .bmi-calculation {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         flex-direction: column;
         justify-content: center;
         gap: 40px;
@@ -876,7 +877,7 @@ footer {
     }
 
     .btn-group {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         display: flex;
         gap: 10px;
         /* justify-content: space-between; */
@@ -912,7 +913,7 @@ footer {
 
 
     #agenda {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         width: 90%;
         padding: 40px 0px;
     }
@@ -1010,11 +1011,21 @@ footer {
     }
     
     .bmi-cal {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         width: 100%;
         margin: 0 auto;
     }
-    
+
+    .cal {
+        /* border: 1px solid white; */
+        margin: 36px 0 0;
+        grid-template-columns: 100%;
+    }
+    .cal > div {
+        /* border: 1px solid white; */
+        grid-template-columns: 100%;
+        gap: 16px;
+    }
 
 
     #team {
