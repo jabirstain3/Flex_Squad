@@ -618,6 +618,22 @@ footer {
     color: var(--basetext);
 } 
 
+.contact-form{
+    border: 1px solid white;
+    width: auto;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.contact-form >div{
+    width: 100%;
+    border: 1px solid white;
+}
+
+
+.contact-input {
+    width: 80%;
+}
 
 
 
